@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <p-card header="Registrarse" [style]="{width: '360px', marginTop: '20vh'}" styleClass="border-noround">
+        <form class="flex flex-column gap-0 justify-content-center">
+            <div class="field">
+                <label for="user">Usuario</label>
+                <input id="user" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                autocomplete="off" placeholder="Crear usuario">
+            </div>
+
+            <div class="field">
+                <label for="email">Correo</label>
+                <input id="email" type="email" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                autocomplete="off" placeholder="Ingresar correo">
+            </div>
+    
+            <div class="field">
+                <label for="password">Contraseña</label>
+                <input id="password" type="password" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                placeholder="Crear contraseña">
+            </div>
+
+            <div class="field">
+                <label for="pass_confirm">Confirmar contraseña</label>
+                <input id="pass_confirm" type="password" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                placeholder="Repetir contraseña">
+            </div>
+    
+            <div class="flex align-items-center">
+                <button type="button" class="bg-info border-green-500 px-3 py-2 text-base border-1 border-solid border-noround cursor-pointer transition-all transition-duration-200 hover:bg-green-600 hover:border-green-600 active:bg-green-700 active:border-green-700">Registrar</button>
+            </div>
+        </form>
+    </p-card>
+</div>

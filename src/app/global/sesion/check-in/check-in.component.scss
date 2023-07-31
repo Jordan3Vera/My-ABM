@@ -1,0 +1,12 @@
+:host ::ng-deep{
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    
+    .p-card{
+        background-color: rgb(213, 204, 204);
+    }
+}

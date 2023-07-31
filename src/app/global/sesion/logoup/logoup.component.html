@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <p-card header="Iniciar sesión" [style]="{width: '360px', marginTop: '10vh'}" styleClass="border-noround">
+        <div class="flex flex-column gap-0 justify-content-center">
+            <div class="field">
+                <label for="email">Correo</label>
+                <input id="email" type="email" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                autocomplete="off" placeholder="Ingresar correo">
+            </div>
+    
+            <div class="field">
+                <label for="Password">Contraseña</label>
+                <input id="Password" type="password" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                placeholder="Ingresar contraseña">
+            </div>
+    
+            <div class="flex align-items-center">
+                <button type="button" class="bg-info border-green-500 px-3 py-2 text-base border-1 border-solid border-noround cursor-pointer transition-all transition-duration-200 hover:bg-green-600 hover:border-green-600 active:bg-green-700 active:border-green-700">Ingresar</button>
+            </div>
+    
+            <div>
+                <a href="#" class="text-yellow-700">¿Olvidaste la contraseña?</a>
+            </div>
+        </div>
+    </p-card>
+</div>
