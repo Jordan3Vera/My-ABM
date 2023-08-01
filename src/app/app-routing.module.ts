@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { LogoupComponent } from './global/sesion/logoup/logoup.component';
 import { NotFoundComponent } from './global/not-found/not-found.component';
 import { CheckInComponent } from './global/sesion/check-in/check-in.component';
+import { DashboardComponent } from './global/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'login', component: LogoupComponent },
   { path: 'check-in', component: CheckInComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

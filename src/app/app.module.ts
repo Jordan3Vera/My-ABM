@@ -4,9 +4,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Routes 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
-//Primeng
+// Forms
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+// Primeng
 import { PrimengModule } from './global/libraries/primeng.module';
+
+
 
 // Components 
 import { AppComponent } from './app.component';
@@ -29,7 +35,10 @@ import { NavbarComponent } from './global/layout/navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,  
     AppRoutingModule,
-    PrimengModule
+    PrimengModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
