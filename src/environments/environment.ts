@@ -5,13 +5,13 @@
 export const environment = {
     production: false,
     firebase: {
-        projectId: 'my-abmdb',
-        appId: '1:947382756937:web:7a341b51ab9f22357d8198',
-        storageBucket: 'my-abmdb.appspot.com',
-        apiKey: 'AIzaSyCHvvyXaCetmt5SJqJmjnt4rDidAvs6bB0',
-        authDomain: 'my-abmdb.firebaseapp.com',
-        messagingSenderId: '947382756937',
-        measurementId: 'G-C40SZRK8RK',
+        apiKey: "AIzaSyBouBg54XR1pZUBCijO2wAPb8u2Div02R0",
+        authDomain: "abm-db-2a3e9.firebaseapp.com",
+        projectId: "abm-db-2a3e9",
+        storageBucket: "abm-db-2a3e9.appspot.com",
+        messagingSenderId: "343056538095",
+        appId: "1:343056538095:web:3413231c313de9b14cbe1a",
+        measurementId: "G-Q7KBCDH5X6"
     }
 };
 
