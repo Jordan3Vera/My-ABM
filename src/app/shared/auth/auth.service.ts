@@ -4,29 +4,25 @@ import { environment } from 'src/environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CookieService } from 'ngx-cookie-service';
+import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from '@angular/fire/auth';
 
-const USERS = 'assets/jsons/users.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private cookies: CookieService, private http: HttpClient) { }
+  constructor(private cookies: CookieService, private http: HttpClient, private auth: Auth) { }
 
-  public readonly header = new HttpHeaders({
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin':'*',
-    'scope': '...lo que sea...',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods':'GET,POST,PUT,DELETE'
-  });
-
-  getUsers(): Observable<any>{
-    return this.http.get<any>(USERS);
+  registerUser({email, password}: any){
+    return createUserWithEmailAndPassword(this.auth, email, password);
   }
 
-  postUser(user: any): Observable<AddUser>{
-    return this.http.post<AddUser>(USERS, JSON.stringify(user), {headers: this.header});
+  login({email, password}: any){
+    return signInWithEmailAndPassword(this.auth, email, password);
+  }
+
+  logout(){
+    return signOut(this.auth);
   }
 }

@@ -23,10 +23,13 @@ import { SplitButtonModule} from 'primeng/splitbutton';
 import { ProgressSpinnerModule} from 'primeng/progressspinner';
 import { InputTextareaModule} from 'primeng/inputtextarea';
 import { DropdownModule} from 'primeng/dropdown';
+import { MessagesModule } from 'primeng/messages';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
     imports: [],
     exports: [
+        ToastModule,
         TooltipModule,
         CardModule,
         ToolbarModule,
@@ -51,7 +54,8 @@ import { DropdownModule} from 'primeng/dropdown';
         MenubarModule,
         PanelMenuModule,
         ConfirmDialogModule,
-        PanelModule
+        PanelModule,
+        MessagesModule
     ]
 })
 export class PrimengModule {}

@@ -3,6 +3,7 @@
 
 <div class="container">
     <p-card header="Registrarse" [style]="{width: '360px', marginTop: '20vh'}" styleClass="border-noround">
+        <p-toast [showTransformOptions]="'translateY(100%)'" [showTransitionOptions]="'1000ms'" [hideTransitionOptions]="'1000ms'" [showTransformOptions]="'translateX(100%)'"></p-toast>
         <form class="flex flex-column gap-0 justify-content-center" [formGroup]="registerForm" (ngSubmit)="register()">
             <div class="field">
                 <label for="username">Usuario</label>
@@ -37,16 +38,4 @@
             </div>
         </form>
     </p-card>
-
-    <!-- <form [formGroup]="example" (ngSubmit)="press()">
-        <div class="field">
-            <label for="name">Nombre de ejemplo</label><br>
-            <input type="text" name="name" formControlName="name"
-            class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-        </div>
-        <div class="field">
-            <p-button label="Guardar" type="submit" [disabled]="example.invalid"></p-button>
-        </div>
-    </form> -->
-
 </div>

@@ -1,0 +1,12 @@
+<div class="card">
+    <p-menubar [model]="items" styleClass="border-noround">
+        <ng-template pTemplate="end">
+            <p-menu [model]="profile" [popup]="true" #menu></p-menu>
+            <!-- <span (click)="menu.toggle($event)" icon="pi pi-bars">Perfil</span> -->
+            <span style="cursor: pointer;" (click)="menu.toggle($event)">
+                <i class="pi pi-fw pi-user"></i>
+                Usuario
+            </span>
+        </ng-template>
+    </p-menubar>
+</div>

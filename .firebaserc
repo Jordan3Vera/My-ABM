@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-abmdb": {
+      "hosting": {
+        "MyABM": [
+          "my-abmdb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-abmdb"
+  }
+}
